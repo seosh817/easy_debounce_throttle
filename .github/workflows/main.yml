@@ -1,0 +1,36 @@
+name: easy_debounce_throttle
+
+env:
+  FLUTTER_VERSION: "3.1.0"
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+    tags:
+      - v*
+  pull_request:
+    branches:
+      - '*'
+
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Install Flutter
+      run: git clone https://github.com/flutter/flutter.git --depth 1 -b $FLUTTER_VERSION flutter
+    - name: Add Flutter to Path
+      run: echo "$GITHUB_WORKSPACE/flutter/bin" >> $GITHUB_PATH
+    - name: Install Flutter Dependencies
+      run: flutter pub get
+    - name: Flutter Analyze
+      run: flutter analyze --no-pub
+    - name: Check Flutter Formatting
+      run: flutter format lib/** --set-exit-if-changed
+    - name: Run Flutter Tests
+      run: flutter test --no-pub

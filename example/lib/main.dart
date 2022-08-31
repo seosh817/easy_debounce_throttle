@@ -1,4 +1,5 @@
 import 'package:easy_debounce_throttle_example/example/debounce_example.dart';
+import 'package:easy_debounce_throttle_example/example/throttle_example.dart';
 import 'package:easy_debounce_throttle_example/util/text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -48,6 +49,14 @@ class _MainPageState extends State<MainPage> {
                     },
                     child: const ListTile(
                       title: Text('Debeounce Example', style: kNotoSansMedium14, textAlign: TextAlign.center,),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ThrottleExample()));
+                    },
+                    child: const ListTile(
+                      title: Text('Throttle Example', style: kNotoSansMedium14, textAlign: TextAlign.center,),
                     ),
                   ),
                 ],

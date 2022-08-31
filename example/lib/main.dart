@@ -1,3 +1,4 @@
+import 'package:easy_debounce_throttle_example/example/debounce_example.dart';
 import 'package:easy_debounce_throttle_example/util/text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -41,6 +42,14 @@ class _MainPageState extends State<MainPage> {
             Expanded(
               child: ListView(
                 children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const DebounceExample()));
+                    },
+                    child: const ListTile(
+                      title: Text('Debeounce Example', style: kNotoSansMedium14, textAlign: TextAlign.center,),
+                    ),
+                  ),
                 ],
               ),
             )

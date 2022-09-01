@@ -84,9 +84,9 @@ you should call the `close()` method to avoid memory leak
 ```
 
 
-If you want to receive debounce and throttle events from methods such as `onClick` callbacks with `WidgetBuilder`, use `EasyDebounceBuilder` and `EasyThrottleBuilder`.
+If you want to receive debounce and throttle events from methods such as `onPressed` callbacks with `WidgetBuilder`, use `EasyDebounceBuilder` and `EasyThrottleBuilder`.
 
-`EasyDebounceBuilder` and `EasyThrottleBuilder` internally disposes the stream, so there is no need to call the `close` method.
+`EasyDebounceBuilder` and `EasyThrottleBuilder` internally disposes the stream, so there is no need to call the `close()` method.
 
 ### EasyDebounceBuilder
 
@@ -125,17 +125,13 @@ An example can be found in the example directory of this repository.
 A list of detailed examples can be found in this [Examples Repository](https://github.com/seosh817/easy_debounce_throttle/tree/master/example)
 
 
-### EasyDebounce, EasyThrottle Example
 |  EasyDebounce |  EasyThrottle |
 |---|---|
-|<img  height="400" src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_debounce.gif?raw=true">| <img height="400" src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_throttle.gif?raw=true">|
+|<img src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_debounce.gif?raw=true" width="300">| <img src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_throttle.gif?raw=true" width="300">|
 
-### EasyDebounceBuilder, EasyThrottleBuilder Example
 |  EasyDebounceBuilder |  EasyThrottleBuilder |
 |---|---|
-|<img  height="400" src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_debounce_builder.gif?raw=true">| <img height="400" src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_throttle_builder.gif?raw=true">|
-
-
+|<img src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_debounce_builder.gif?raw=true" width="300">| <img src="https://github.com/seosh817/easy_debounce_throttle/blob/release/1.0.0/screenshots/easy_throttle_builder.gif?raw=true" width="300">|
 ## Installing
 
 ### 1. Depend on it

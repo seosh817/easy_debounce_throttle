@@ -162,7 +162,7 @@ $ flutter pub get
 Now in your `Dart` code, you can use:
 
 ```dart
-import 'package:easy_debounce_throttle/easy_debounce_throttle/debounce/easy_debounce.dart';
+import 'package:easy_debounce_throttle/debounce/easy_debounce.dart';
 ```
 
 

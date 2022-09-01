@@ -11,12 +11,12 @@
       alt="Pub Package" />
   </a>
   <a href="https://github.com/seosh817/easy_debounce_throttle/actions?query=workflow">
-    <img src="https://img.shields.io/github/workflow/status/seosh817/easy_debounce_throttle/CI?logo=github"
+    <img src="https://img.shields.io/github/workflow/status/seosh817/easy_debounce_throttle/main_workflow/release/1.0.0?logo=github"
       alt="Build Status" />
   </a>
 
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/github/license/seosh817/easy_debounce_throttle?color=red"
+    <img src="https://img.shields.io/github/license/seosh817/easy_debounce_throttle"
       alt="License: MIT" />
   </a>
 </p><br>

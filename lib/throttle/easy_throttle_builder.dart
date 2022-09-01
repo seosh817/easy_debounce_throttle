@@ -1,4 +1,4 @@
-import 'package:easy_debounce_throttle/easy_debounce_throttle/throttle/easy_throttle.dart';
+import 'package:easy_debounce_throttle/throttle/easy_throttle.dart';
 import 'package:flutter/widgets.dart';
 
 typedef ThrottleCallback = Function(VoidCallback callback);

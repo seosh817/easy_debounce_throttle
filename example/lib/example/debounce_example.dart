@@ -1,5 +1,5 @@
-import 'package:easy_debounce_throttle/easy_debounce_throttle/debounce/easy_debounce_builder.dart';
-import 'package:easy_debounce_throttle/easy_debounce_throttle/debounce/easy_debounce.dart';
+import 'package:easy_debounce_throttle/debounce/easy_debounce_builder.dart';
+import 'package:easy_debounce_throttle/debounce/easy_debounce.dart';
 import 'package:easy_debounce_throttle_example/util/text_style.dart';
 import 'package:flutter/material.dart';
 

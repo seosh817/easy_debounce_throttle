@@ -34,53 +34,53 @@ you should call the `close()` method to avoid memory leak
 ### EasyDebounce
 
 ```dart
-  final EasyDebounce _easyDebounce = EasyDebounce(delay: const Duration(milliseconds: 1000));
-  final TextEditingController _textController = TextEditingController();
+final EasyDebounce _easyDebounce = EasyDebounce(delay: const Duration(milliseconds: 1000));
+final TextEditingController _textController = TextEditingController();
 
-  @override
-  void initState() {
-    super.initState();
-    _textController.addListener(() {
-      _easyDebounce.debounce(_textController.text);
-    });
-    _easyDebounce.listen((data) {
-      setState(() {
-        _debounceText = '$data';
-      });
-    });
-  }
-  
-  @override
-  void dispose() {
-    _easyDebounce.close();
-    super.dispose();
-  }
+@override
+void initState() {
+super.initState();
+_textController.addListener(() {
+  _easyDebounce.debounce(_textController.text);
+});
+_easyDebounce.listen((data) {
+  setState(() {
+    _debounceText = '$data';
+  });
+});
+}
+
+@override
+void dispose() {
+_easyDebounce.close();
+super.dispose();
+}
 ```
 
 ### EasyThrottle
 
 ```dart
-  final EasyThrottle _easyThrottle = EasyThrottle(delay: const Duration(milliseconds: 1000));
-  final TextEditingController _textController = TextEditingController();
+final EasyThrottle _easyThrottle = EasyThrottle(delay: const Duration(milliseconds: 1000));
+final TextEditingController _textController = TextEditingController();
 
-  @override
-  void initState() {
-    super.initState();
-    _textController.addListener(() {
-      _easyThrottle.throttle(_textController.text);
-    });
-    _easyThrottle.listen((data) {
-      setState(() {
-        _throttleText = '$data';
-      });
-    });
-  }
+@override
+void initState() {
+super.initState();
+_textController.addListener(() {
+  _easyThrottle.throttle(_textController.text);
+});
+_easyThrottle.listen((data) {
+  setState(() {
+    _throttleText = '$data';
+  });
+});
+}
 
-  @override
-  void dispose() {
-    _easyThrottle.close();
-    super.dispose();
-  }
+@override
+void dispose() {
+_easyThrottle.close();
+super.dispose();
+}
 ```
 
 

@@ -62,9 +62,14 @@ class _ThrottleExampleState extends State<ThrottleExample> {
               ),
               EasyThrottleBuilder(
                   delay: const Duration(milliseconds: 1000),
-                  builder: (context, debounce) {
+                  builder: (context, throttle) {
                     return TextButton(
-                        onPressed: () => debounce(_increaseThrottleCount),
+                        onPressed: () => throttle(() => _increaseThrottleCount()),
+                        // onPressed: () {
+                        //   throttle(() {
+                        //     _increaseThrottleCount();
+                        //   });
+                        // },
                         child: Text(
                           'increase throttle count',
                           style: kNotoSansBold14.copyWith(color: Colors.white),

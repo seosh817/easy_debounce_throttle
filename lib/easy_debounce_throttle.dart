@@ -1,7 +1,7 @@
 library easy_debounce_throttle;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'package:easy_debounce_throttle/debounce/easy_debounce.dart';
+export 'package:easy_debounce_throttle/debounce/easy_debounce_builder.dart';
+
+export 'package:easy_debounce_throttle/throttle/easy_throttle.dart';
+export 'package:easy_debounce_throttle/throttle/easy_throttle_builder.dart';

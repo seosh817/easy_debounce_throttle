@@ -64,7 +64,12 @@ class _DebounceExampleState extends State<DebounceExample> {
                   delay: const Duration(milliseconds: 1000),
                   builder: (context, debounce) {
                     return TextButton(
-                        onPressed: () => debounce(_increaseDebounceCount),
+                        onPressed: () => debounce(() => _increaseDebounceCount()),
+                        // onPressed: () {
+                        //   debounce(() {
+                        //     _increaseDebounceCount();
+                        //   });
+                        // },
                         child: Text(
                           'increase debounce count',
                           style: kNotoSansBold14.copyWith(color: Colors.white),

@@ -1,6 +1,6 @@
 name: easy_debounce_throttle
 description: An easy-to-use flutter package that provides debounce and throttle with Stream and WidgetBuilder.
-version: 1.0.0+2
+version: 1.0.0+3
 repository: https://github.com/seosh817/easy_debounce_throttle
 
 environment:

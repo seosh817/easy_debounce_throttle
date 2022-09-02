@@ -95,7 +95,12 @@ EasyDebounceBuilder(
     delay: const Duration(milliseconds: 1000),
     builder: (context, debounce) {
       return TextButton(
-          onPressed: () => debounce(_increaseDebounceCount),
+          onPressed: () => debounce(() => _increaseDebounceCount()),
+       // onPressed: () {
+       //   debounce(() {
+       //     _increaseDebounceCount();
+       //   });
+       // },
           child: Text(
             'increase debounce count',
             style: kNotoSansBold14.copyWith(color: Colors.white),
@@ -108,11 +113,16 @@ EasyDebounceBuilder(
 ```dart
 EasyThrottleBuilder(
     delay: const Duration(milliseconds: 1000),
-    builder: (context, debounce) {
+    builder: (context, throttle) {
       return TextButton(
-          onPressed: () => debounce(_increaseThrottleCount),
+          onPressed: () => throttle(() => _increaseThrottleCount()),
+       // onPressed: () {
+       //   throttle(() {
+       //     _increaseThrottleCount();
+       //   });
+       // },
           child: Text(
-            'increase debounce count',
+            'increase throttle count',
             style: kNotoSansBold14.copyWith(color: Colors.white),
           ));
     }),

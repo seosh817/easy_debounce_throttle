@@ -1,4 +1,4 @@
-import 'package:easy_debounce_throttle/easy_debounce_throttle/debounce/easy_debounce.dart';
+import 'package:easy_debounce_throttle/debounce/easy_debounce.dart';
 import 'package:flutter/widgets.dart';
 
 typedef DebounceCallback = Function(VoidCallback callback);

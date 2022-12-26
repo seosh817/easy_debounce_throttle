@@ -6,12 +6,13 @@
     <img src="https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter"
       alt="Platform" />
   </a>
+
   <a href="https://pub.dartlang.org/packages/easy_debounce_throttle">
     <img src="https://img.shields.io/pub/v/easy_debounce_throttle.svg"
       alt="Pub Package" />
   </a>
   <a href="https://github.com/seosh817/easy_debounce_throttle/actions/workflows/main.yml">
-    <img src="https://img.shields.io/github/workflow/status/seosh817/easy_debounce_throttle/main_workflow/release/1.0.0?logo=github"
+    <img src="https://img.shields.io/github/actions/workflow/status/seosh817/easy_debounce_throttle/main.yml?branch=release/1.0.0&logo=github"
       alt="Build Status" />
   </a>
 

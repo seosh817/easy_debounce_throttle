@@ -14,3 +14,7 @@
 
 * Update examples
 * Update README.md Usage
+
+## 1.0.0+4
+
+- Change GitHub workflow badge routes

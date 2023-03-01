@@ -18,3 +18,7 @@
 ## 1.0.0+4
 
 - Change GitHub workflow badge routes
+
+## 1.0.0+5
+
+- Add descriptions.

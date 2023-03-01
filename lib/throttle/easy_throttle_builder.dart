@@ -8,6 +8,7 @@ typedef EasyThrottleWidgetBuilder = Widget Function(
   ThrottleCallback throttleCallback,
 );
 
+/// EasyThrottleBuilder provides the debounce function as Widget.
 class EasyThrottleBuilder extends StatefulWidget {
   const EasyThrottleBuilder({Key? key, required this.builder, this.delay = const Duration(milliseconds: 1000)}) : super(key: key);
 

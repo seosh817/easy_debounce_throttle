@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+/// EasyThrottle provides the throttle function as Stream.
 class EasyThrottle extends Stream<dynamic> {
   final ThrottleHandler _throttleHandler;
   final StreamController<dynamic> _dataStreamController = StreamController<dynamic>();
@@ -10,8 +11,10 @@ class EasyThrottle extends Stream<dynamic> {
 
   EasyThrottle({this.delay}) : _throttleHandler = ThrottleHandler(delay: delay);
 
+  /// When data flows into the Stream, ThrottleHandler internally executes the throttle function.
   void _execute(dynamic data) async => _throttleHandler.throttle(_sinkData(data));
 
+  /// Sink data.
   VoidCallback _sinkData(dynamic data) => () => _dataStreamController.sink.add(data);
 
   void throttle(dynamic data) async => _execute(data);
@@ -27,12 +30,14 @@ class EasyThrottle extends Stream<dynamic> {
   void close() => _dataStreamController.close;
 }
 
+/// ThrottleHandler perform throttle function.
 class ThrottleHandler {
   Duration? delay;
   bool isClickable = true;
 
   ThrottleHandler({this.delay});
 
+  /// Throttle during delay.
   void throttle(VoidCallback callback) {
     if (isClickable) {
       isClickable = false;

@@ -8,6 +8,7 @@ typedef EasyDebounceWidgetBuilder = Widget Function(
   DebounceCallback debounceCallback,
 );
 
+/// EasyDebounceBuilder provides the debounce function as Widget.
 class EasyDebounceBuilder extends StatefulWidget {
   const EasyDebounceBuilder({Key? key, required this.builder, this.delay = const Duration(milliseconds: 1000)}) : super(key: key);
 
